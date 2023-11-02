@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SampleTask.Domain.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SampleTask.Domain
 {
-    public class Product
+    public class Product : BaseDomainEntity
     {
         public string Name { get; set; }
 

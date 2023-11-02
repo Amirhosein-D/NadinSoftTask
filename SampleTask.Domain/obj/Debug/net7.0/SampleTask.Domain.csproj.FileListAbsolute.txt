@@ -1,0 +1,11 @@
+C:\Users\LENOVO\Desktop\SampleTask\SampleTask.Domain\bin\Debug\net7.0\SampleTask.Domain.deps.json
+C:\Users\LENOVO\Desktop\SampleTask\SampleTask.Domain\bin\Debug\net7.0\SampleTask.Domain.dll
+C:\Users\LENOVO\Desktop\SampleTask\SampleTask.Domain\bin\Debug\net7.0\SampleTask.Domain.pdb
+C:\Users\LENOVO\Desktop\SampleTask\SampleTask.Domain\obj\Debug\net7.0\SampleTask.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Desktop\SampleTask\SampleTask.Domain\obj\Debug\net7.0\SampleTask.Domain.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Desktop\SampleTask\SampleTask.Domain\obj\Debug\net7.0\SampleTask.Domain.AssemblyInfo.cs
+C:\Users\LENOVO\Desktop\SampleTask\SampleTask.Domain\obj\Debug\net7.0\SampleTask.Domain.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\SampleTask\SampleTask.Domain\obj\Debug\net7.0\SampleTask.Domain.dll
+C:\Users\LENOVO\Desktop\SampleTask\SampleTask.Domain\obj\Debug\net7.0\refint\SampleTask.Domain.dll
+C:\Users\LENOVO\Desktop\SampleTask\SampleTask.Domain\obj\Debug\net7.0\SampleTask.Domain.pdb
+C:\Users\LENOVO\Desktop\SampleTask\SampleTask.Domain\obj\Debug\net7.0\ref\SampleTask.Domain.dll

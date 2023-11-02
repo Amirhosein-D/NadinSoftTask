@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B/l/NIZ/1GsFDVWMtOY9E4bDwZPUkp88D6Wodl314le6Ozpd8XDP73mGcyve7TsDS1PZTVwCl/i4KZXLgoA3ow==",
+  "dgSpecHash": "1xZaizB7s/5RsfAeDJkPECeAMGRwGRjGkaNgOtNlZkO44dCxWTM7vhGSMIFKCXVLjj6Jv1waGMGavowLHyXVPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\NadinSoftTask\\SampleTask\\SampleTask.Application\\SampleTask.Application.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\SampleTask\\SampleTask.Application\\SampleTask.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

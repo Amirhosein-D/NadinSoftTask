@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace SampleTask.Application.Features.Products.Commands
 {
-    internal class CreateProductCommand : IRequest<BaseCommandResponse>
+    public class CreateProductCommand : IRequest<BaseCommandResponse>
     {
         public CreateProductDto CreateProductDto { get; set; }
 

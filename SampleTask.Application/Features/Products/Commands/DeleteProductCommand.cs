@@ -12,33 +12,45 @@ namespace SampleTask.Application.Features.Products.Commands
     public class DeleteProductCommand : IRequest<BaseCommandResponse>
     {
         public int Id { get; set; }
+        public string Email { get; set; }
+
+
 
         public class DeleteProductCommandHandler : IRequestHandler<DeleteProductCommand, BaseCommandResponse>
         {
             private readonly IProductRepository _productRepository;
 
-            public DeleteProductCommandHandler(IProductRepository projectRepository)
+            public DeleteProductCommandHandler(IProductRepository productRepository)
             {
-                _productRepository = projectRepository;
+                _productRepository = productRepository;
             }
 
             public async Task<BaseCommandResponse> Handle(DeleteProductCommand request, CancellationToken cancellationToken)
             {
                 var response = new BaseCommandResponse();
 
-                var project = await _productRepository.GetByIdAsync(request.Id);
-
-                if (project == null)
+                if (!await _productRepository.UserProductCheck(request.Email, request.Id))
                 {
                     response.Success = false;
-                    response.Message = "deleted faild";
+                    response.Message = "You do not have access to delete this product";
                     return response;
                 }
 
-                await _productRepository.DeleteAsync(project);
+                var product = await _productRepository.GetByIdAsync(request.Id);
+
+                if (product == null)
+                {
+                    response.Success = false;
+                    response.Message = "deleted faild , There is no product with this ID";
+                    return response;
+                }
+
+
+
+                await _productRepository.DeleteAsync(product);
 
                 response.Success = true;
-                response.Message = "deleted faild";
+                response.Message = "deleted successful";
                 return response;
             }
         }

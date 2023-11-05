@@ -10,6 +10,8 @@ namespace SampleTask.Application.Contracts.Presistence
 {
     public interface IProductRepository : IGenericRepository<Product>
     {
-        
+        public Task<bool> UserProductCheck(string email , int id);
+
+        Task<IEnumerable<Product>> GetProductsCreatedByUserIdAsync(string email);
     }
 }

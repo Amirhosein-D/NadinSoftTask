@@ -71,7 +71,6 @@ C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\obj\Debug\net7.0\SampleTask
 C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\obj\Debug\net7.0\SampleTask.Api.AssemblyInfoInputs.cache
 C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\obj\Debug\net7.0\SampleTask.Api.AssemblyInfo.cs
 C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\obj\Debug\net7.0\SampleTask.Api.csproj.CoreCompileInputs.cache
-C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\obj\Debug\net7.0\SampleTask.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\obj\Debug\net7.0\SampleTask.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\obj\Debug\net7.0\staticwebassets\msbuild.SampleTask.Api.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.SampleTask.Api.props
@@ -87,3 +86,12 @@ C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\obj\Debug\net7.0\refint\Sam
 C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\obj\Debug\net7.0\SampleTask.Api.pdb
 C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\obj\Debug\net7.0\SampleTask.Api.genruntimeconfig.cache
 C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\obj\Debug\net7.0\ref\SampleTask.Api.dll
+C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\bin\Debug\net7.0\SampleTask.Identity.dll
+C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Api\bin\Debug\net7.0\SampleTask.Identity.pdb

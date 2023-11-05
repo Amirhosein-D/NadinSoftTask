@@ -16,6 +16,9 @@ namespace SampleTask.Application.Features.Products.Commands
     public class CreateProductCommand : IRequest<BaseCommandResponse>
     {
         public CreateProductDto CreateProductDto { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+
 
         public class CreateProductDtoHandler : IRequestHandler<CreateProductCommand, BaseCommandResponse>
         {
@@ -37,15 +40,20 @@ namespace SampleTask.Application.Features.Products.Commands
                 if (!result.IsValid)
                 {
                     response.Success = false;
-                    response.Message = "creating failld";
+                    response.Message = "creating failld , The form is not filled correctly";
                     response.Erorrs = result.Errors.Select(e => e.ErrorMessage).ToList();
                     return response;
                 }
-                var project = _mapper.Map<Product>(request.CreateProductDto);
-                project = await _productRepository.AddAsync(project);
+                var product = _mapper.Map<Product>(request.CreateProductDto);
+
+                product.ManufacturePhone = request.Phone;
+                product.ManufactureEmail = request.Email;
+                product.ProductDate = DateTime.Now;
+
+                product = await _productRepository.AddAsync(product);
                 response.Success = true;
                 response.Message = "creating Successful";
-                response.Id = project.Id;
+                response.Id = product.Id;
                 return response;
             }
         }

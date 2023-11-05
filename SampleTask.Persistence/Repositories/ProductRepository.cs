@@ -19,5 +19,22 @@ namespace SampleTask.Persistence.Repositories
             _context = context;
 
         }
+
+        public async Task<bool> UserProductCheck(string email , int id)
+        {
+            var product = await GetByIdAsync(id);
+
+            if (product.ManufactureEmail == email)
+                return true;
+
+            return false;
+        }
+
+
+        public async Task<IEnumerable<Product>> GetProductsCreatedByUserIdAsync(string email)
+        {
+            return await _context.Products.Where(p => p.ManufactureEmail == email).ToListAsync();
+        }
+
     }
 }

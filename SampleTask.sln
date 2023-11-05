@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleTask.Domain", "Sample
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleTask.Persistence", "SampleTask.Persistence\SampleTask.Persistence.csproj", "{08047FCC-15B0-4D9F-B8D5-412D8C1BCCE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleTask.Api", "SampleTask.Api\SampleTask.Api.csproj", "{C6BB1979-0A6C-4A1A-9F03-A07F607FA005}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleTask.Api", "SampleTask.Api\SampleTask.Api.csproj", "{C6BB1979-0A6C-4A1A-9F03-A07F607FA005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleTask.Identity", "SampleTask.Identity\SampleTask.Identity.csproj", "{57977CCC-926A-4C49-AABA-020C9EBC30EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{C6BB1979-0A6C-4A1A-9F03-A07F607FA005}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6BB1979-0A6C-4A1A-9F03-A07F607FA005}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6BB1979-0A6C-4A1A-9F03-A07F607FA005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57977CCC-926A-4C49-AABA-020C9EBC30EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57977CCC-926A-4C49-AABA-020C9EBC30EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57977CCC-926A-4C49-AABA-020C9EBC30EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57977CCC-926A-4C49-AABA-020C9EBC30EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +62,7 @@ Global
 		{1B724F55-2A86-4775-910F-18F2BE70C709} = {CC73DC1D-C159-4E13-B4DE-3B097272F645}
 		{08047FCC-15B0-4D9F-B8D5-412D8C1BCCE1} = {9D820B39-0DEE-4744-AB3B-65A430C8C11C}
 		{C6BB1979-0A6C-4A1A-9F03-A07F607FA005} = {E54C0B44-6BB0-469D-8BE4-00BA4ED6ACEB}
+		{57977CCC-926A-4C49-AABA-020C9EBC30EC} = {9D820B39-0DEE-4744-AB3B-65A430C8C11C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CEA27A02-0278-4860-B88B-98F145E83B42}

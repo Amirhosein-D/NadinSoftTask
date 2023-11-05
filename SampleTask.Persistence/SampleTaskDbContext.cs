@@ -10,11 +10,7 @@ namespace SampleTask.Persistence
 {
     public class SampleTaskDbContext : DbContext
     {
-        public SampleTaskDbContext(DbContextOptions options) : base(options)
-        {
-        }
-
-        protected SampleTaskDbContext()
+        public SampleTaskDbContext(DbContextOptions<SampleTaskDbContext> options) : base(options)
         {
         }
 

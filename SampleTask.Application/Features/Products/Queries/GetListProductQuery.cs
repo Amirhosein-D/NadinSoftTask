@@ -2,6 +2,7 @@
 using MediatR;
 using SampleTask.Application.Contracts.Presistence;
 using SampleTask.Application.Models.DTOs.Products;
+using SampleTask.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace SampleTask.Application.Features.Products.Queries
 {
     public class GetListProductQuery : IRequest<List<ProductDto>>
     {
+        public string Email { get; set; }
+
 
         public class GetListProductQueryHandlers : IRequestHandler<GetListProductQuery, List<ProductDto>>
         {
@@ -26,10 +29,21 @@ namespace SampleTask.Application.Features.Products.Queries
 
             public async Task<List<ProductDto>> Handle(GetListProductQuery request, CancellationToken cancellationToken)
             {
-                var projects = await _productRepo.GetAllAsync();
-                return _mapper.Map<List<ProductDto>>(projects);
+                IEnumerable<Product> products;
+                if (!string.IsNullOrEmpty(request.Email))
+                {
+                    products = await _productRepo.GetProductsCreatedByUserIdAsync(request.Email);
+                }
+                else
+                {
+                    products = await _productRepo.GetAllAsync();
+                }
+
+                
+                return _mapper.Map<List<ProductDto>>(products);
             }
         }
+
 
     }
 }

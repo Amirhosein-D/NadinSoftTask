@@ -16,6 +16,8 @@ namespace SampleTask.Application.Features.Products.Commands
     {
         public EditProductDto EditProductDto { get; set; }
 
+        public string Email { get; set; }
+
         public class EditProductCommandHandler : IRequestHandler<EditProductCommand, BaseCommandResponse>
         {
             private readonly IMapper _mapper;
@@ -30,28 +32,36 @@ namespace SampleTask.Application.Features.Products.Commands
             public async Task<BaseCommandResponse> Handle(EditProductCommand request, CancellationToken cancellationToken)
             {
                 var response = new BaseCommandResponse();
+
+                if (!await _productRepository.UserProductCheck(request.Email , request.EditProductDto.Id))
+                {
+                    response.Success = false;
+                    response.Message = "You do not have access to edit this product";
+                    return response;
+                }
+
                 var validator = new EditProductDtoValidator();
                 var result = await validator.ValidateAsync(request.EditProductDto);
 
                 if (!result.IsValid)
                 {
                     response.Success = false;
-                    response.Message = "edited failld";
+                    response.Message = "edited failld , The form is not filled correctly";
                     response.Erorrs = result.Errors.Select(e => e.ErrorMessage).ToList();
                     return response;
                 }
 
-                var project = await _productRepository.GetByIdAsync(request.EditProductDto.Id);
+                var product = await _productRepository.GetByIdAsync(request.EditProductDto.Id);
 
-                if (project == null)
+                if (product == null)
                 {
                     response.Success = false;
-                    response.Message = "edited failld";
+                    response.Message = "edited failld , There is no product with this ID";
                     return response;
                 }
 
-                _mapper.Map(request.EditProductDto, project);
-                await _productRepository.UpdateAsync(project);
+                _mapper.Map(request.EditProductDto, product);
+                await _productRepository.UpdateAsync(product);
 
                 response.Success = true;
                 response.Message = "edited successful";

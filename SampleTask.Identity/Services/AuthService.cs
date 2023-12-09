@@ -4,7 +4,6 @@ using Microsoft.IdentityModel.Tokens;
 using SampleTask.Application.Constants;
 using SampleTask.Application.Contracts.Identity;
 using SampleTask.Application.Models.Identity;
-using SampleTask.Identity.Models;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -12,6 +11,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using SampleTask.Domain;
 
 namespace SampleTask.Identity.Services
 {
@@ -56,7 +56,8 @@ namespace SampleTask.Identity.Services
 
                 if (result.Succeeded)
                 {
-                    await _userManager.AddToRoleAsync(user, "Admin");
+                    await _userManager.AddToRoleAsync(user, "admin");
+                    //await _userManager.AddToRoleAsync(user, "superadmin");
                     return new RegisterationResponse() { UserId = user.Id };
                 }
                 else

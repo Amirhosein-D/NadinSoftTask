@@ -1184,11 +1184,32 @@
       "SampleTask.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "7.0.13"
+        },
         "compile": {
           "bin/placeholder/SampleTask.Domain.dll": {}
         },
         "runtime": {
           "bin/placeholder/SampleTask.Domain.dll": {}
+        }
+      },
+      "SampleTask.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.13",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.13",
+          "Microsoft.EntityFrameworkCore": "7.0.13",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
+          "SampleTask.Application": "1.0.0",
+          "SampleTask.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SampleTask.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SampleTask.Persistence.dll": {}
         }
       }
     }
@@ -3068,6 +3089,11 @@
       "type": "project",
       "path": "../SampleTask.Domain/SampleTask.Domain.csproj",
       "msbuildProject": "../SampleTask.Domain/SampleTask.Domain.csproj"
+    },
+    "SampleTask.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../SampleTask.Persistence/SampleTask.Persistence.csproj",
+      "msbuildProject": "../SampleTask.Persistence/SampleTask.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3075,7 +3101,8 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.13",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.13",
-      "SampleTask.Application >= 1.0.0"
+      "SampleTask.Application >= 1.0.0",
+      "SampleTask.Persistence >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3085,11 +3112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\NadinSoftTask\\SampleTask.Identity\\SampleTask.Identity.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\Work Version\\NadinSoftTask\\SampleTask.Identity\\SampleTask.Identity.csproj",
       "projectName": "SampleTask.Identity",
-      "projectPath": "C:\\Users\\LENOVO\\Desktop\\NadinSoftTask\\SampleTask.Identity\\SampleTask.Identity.csproj",
+      "projectPath": "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\Work Version\\NadinSoftTask\\SampleTask.Identity\\SampleTask.Identity.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO\\Desktop\\NadinSoftTask\\SampleTask.Identity\\obj\\",
+      "outputPath": "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\Work Version\\NadinSoftTask\\SampleTask.Identity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3110,8 +3137,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\LENOVO\\Desktop\\NadinSoftTask\\SampleTask.Application\\SampleTask.Application.csproj": {
-              "projectPath": "C:\\Users\\LENOVO\\Desktop\\NadinSoftTask\\SampleTask.Application\\SampleTask.Application.csproj"
+            "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\Work Version\\NadinSoftTask\\SampleTask.Application\\SampleTask.Application.csproj": {
+              "projectPath": "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\Work Version\\NadinSoftTask\\SampleTask.Application\\SampleTask.Application.csproj"
+            },
+            "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\Work Version\\NadinSoftTask\\SampleTask.Persistence\\SampleTask.Persistence.csproj": {
+              "projectPath": "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\Work Version\\NadinSoftTask\\SampleTask.Persistence\\SampleTask.Persistence.csproj"
             }
           }
         }

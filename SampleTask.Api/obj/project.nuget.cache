@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qmPKU03OsuvZvKGgMejto+5QzEDT+mamm0cCFoA/YbdPJiz6wt9UjgK5iprOn3B8pffqcOq859ei6RHKAuZ1sA==",
+  "dgSpecHash": "MOGG+KNpZIMGDeGPyMyc6WBydIotUcJDK5/NVva58+VuTrFRxm/kOyNrd0rfv0R9bSwUfvjHpNONfWWnZvwgtw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\NadinSoftTask\\SampleTask.Api\\SampleTask.Api.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\Work Version\\NadinSoftTask\\SampleTask.Api\\SampleTask.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -15,3 +15,22 @@ C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Identity\obj\Debug\net7.0\Sampl
 C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Identity\obj\Debug\net7.0\refint\SampleTask.Identity.dll
 C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Identity\obj\Debug\net7.0\SampleTask.Identity.pdb
 C:\Users\LENOVO\Desktop\NadinSoftTask\SampleTask.Identity\obj\Debug\net7.0\ref\SampleTask.Identity.dll
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\bin\Debug\net7.0\SampleTask.Identity.deps.json
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\bin\Debug\net7.0\SampleTask.Identity.dll
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\bin\Debug\net7.0\SampleTask.Identity.pdb
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\bin\Debug\net7.0\SampleTask.Application.dll
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\bin\Debug\net7.0\SampleTask.Domain.dll
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\bin\Debug\net7.0\SampleTask.Application.pdb
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\bin\Debug\net7.0\SampleTask.Domain.pdb
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\obj\Debug\net7.0\SampleTask.Identity.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\obj\Debug\net7.0\SampleTask.Identity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\obj\Debug\net7.0\SampleTask.Identity.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\obj\Debug\net7.0\SampleTask.Identity.AssemblyInfo.cs
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\obj\Debug\net7.0\SampleTask.Identity.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\obj\Debug\net7.0\SampleTask.Identity.csproj.CopyComplete
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\obj\Debug\net7.0\SampleTask.Identity.dll
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\obj\Debug\net7.0\refint\SampleTask.Identity.dll
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\obj\Debug\net7.0\SampleTask.Identity.pdb
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\obj\Debug\net7.0\ref\SampleTask.Identity.dll
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\bin\Debug\net7.0\SampleTask.Persistence.dll
+C:\Users\LENOVO\Desktop\Task Project For Haire In Compony\Work Version\NadinSoftTask\SampleTask.Identity\bin\Debug\net7.0\SampleTask.Persistence.pdb

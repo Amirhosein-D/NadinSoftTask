@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SampleTask.Application.Contracts.Persistence;
 using SampleTask.Application.Contracts.Presistence;
+using SampleTask.Domain;
 using SampleTask.Persistence.Repositories;
 using System;
 using System.Collections.Generic;
@@ -24,6 +26,12 @@ namespace SampleTask.Persistence
                 //options.UseSqlServer("Data Source = LAPTOP - 8KB21INC; Initial Catalog = CVDb; Integrated Security = True");
 
             });
+
+
+
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<SampleTaskDbContext>().AddDefaultTokenProviders();
+
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IProductRepository, ProductRepository>();

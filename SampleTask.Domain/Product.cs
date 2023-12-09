@@ -22,5 +22,8 @@ namespace SampleTask.Domain
         public string ManufactureEmail { get; set; }
 
         public bool IsAvailable { get; set; }
+
+        public ICollection<ApplicationUserProduct> ApplicationUserProducts { get; set; }
+
     }
 }

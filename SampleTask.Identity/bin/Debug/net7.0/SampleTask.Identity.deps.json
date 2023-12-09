@@ -11,7 +11,8 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.13",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
-          "SampleTask.Application": "1.0.0"
+          "SampleTask.Application": "1.0.0",
+          "SampleTask.Persistence": "1.0.0"
         },
         "runtime": {
           "SampleTask.Identity.dll": {}
@@ -658,8 +659,24 @@
         }
       },
       "SampleTask.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "7.0.13"
+        },
         "runtime": {
           "SampleTask.Domain.dll": {}
+        }
+      },
+      "SampleTask.Persistence/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.13",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.13",
+          "Microsoft.EntityFrameworkCore": "7.0.13",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
+          "SampleTask.Application": "1.0.0",
+          "SampleTask.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SampleTask.Persistence.dll": {}
         }
       }
     }
@@ -1145,6 +1162,11 @@
       "sha512": ""
     },
     "SampleTask.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SampleTask.Persistence/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
+using SampleTask.Application.Contracts.Identity;
 using SampleTask.Application.Contracts.Presistence;
 using SampleTask.Application.Models.DTOs.Products;
 using SampleTask.Application.Models.DTOs.Products.Validators;
@@ -22,18 +23,22 @@ namespace SampleTask.Application.Features.Products.Commands
         {
             private readonly IMapper _mapper;
             private readonly IProductRepository _productRepository;
+            private readonly IPermissionService _permissionService;
 
-            public EditProductCommandHandler(IMapper mapper, IProductRepository productRepository)
+            public EditProductCommandHandler(IMapper mapper, IProductRepository productRepository,IPermissionService permissionService)
             {
                 _mapper = mapper;
                 _productRepository = productRepository;
+                _permissionService = permissionService;
             }
 
             public async Task<BaseCommandResponse> Handle(EditProductCommand request, CancellationToken cancellationToken)
             {
                 var response = new BaseCommandResponse();
 
-                if (!await _productRepository.UserProductCheck(request.Email , request.EditProductDto.Id))
+                // check both way
+                if (!await _productRepository.UserProductCheck(request.Email , request.EditProductDto.Id)
+                    && !await _permissionService.UserProductCheckHasRelationshipAsync(request.Email , request.EditProductDto.Id))
                 {
                     response.Success = false;
                     response.Message = "You do not have access to edit this product";

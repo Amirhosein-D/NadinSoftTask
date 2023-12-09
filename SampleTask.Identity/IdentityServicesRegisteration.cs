@@ -6,7 +6,6 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore;
 using SampleTask.Application.Contracts.Identity;
 using SampleTask.Application.Models.Identity;
-using SampleTask.Identity.Models;
 using SampleTask.Identity.Services;
 using System;
 using System.Collections.Generic;
@@ -22,15 +21,10 @@ namespace SampleTask.Identity
         public static IServiceCollection ConfigureIdentityServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
-            services.AddDbContext<SampleTaskIdentityDbContext>(options =>
-            {
-                options.UseSqlServer(configuration.GetConnectionString("SampleTaskIdentityConnectionString"),
-                    b => b.MigrationsAssembly(typeof(SampleTaskIdentityDbContext).Assembly.FullName));
-            });
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<SampleTaskIdentityDbContext>().AddDefaultTokenProviders();
+            
 
             services.AddTransient<IAuthService , AuthService>();
+            services.AddTransient<IPermissionService, PermissionService>();
 
             services.AddAuthentication(options =>
             {

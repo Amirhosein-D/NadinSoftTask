@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using SampleTask.Application.Contracts.Identity;
 using SampleTask.Application.Contracts.Presistence;
 using SampleTask.Application.Models.Response;
 using System;
@@ -19,17 +20,20 @@ namespace SampleTask.Application.Features.Products.Commands
         public class DeleteProductCommandHandler : IRequestHandler<DeleteProductCommand, BaseCommandResponse>
         {
             private readonly IProductRepository _productRepository;
+            private readonly IPermissionService _permissionService;
 
-            public DeleteProductCommandHandler(IProductRepository productRepository)
+            public DeleteProductCommandHandler(IProductRepository productRepository, IPermissionService permissionService)
             {
                 _productRepository = productRepository;
+                _permissionService = permissionService;
             }
 
             public async Task<BaseCommandResponse> Handle(DeleteProductCommand request, CancellationToken cancellationToken)
             {
                 var response = new BaseCommandResponse();
 
-                if (!await _productRepository.UserProductCheck(request.Email, request.Id))
+                if (!await _productRepository.UserProductCheck(request.Email, request.Id)
+                    && !await _permissionService.UserProductCheckHasRelationshipAsync(request.Email, request.Id))
                 {
                     response.Success = false;
                     response.Message = "You do not have access to delete this product";

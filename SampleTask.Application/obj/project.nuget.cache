@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mdu31360JbDfaBGU2cZeAFZBraIlUTXyScUyAbbJukO32EiN2W79VSJttt8fDTC58DLMuF4E/AqiJIwfDv97ow==",
+  "dgSpecHash": "xW2wf6l7E6Wsmy58Z7Utg8oycU18gD0tEUvDC21/mMeHOpkpVwJ2ULk3fGE9IHn4DjbZ89fQsxAJE3P9265u9Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\Work Version\\NadinSoftTask\\SampleTask.Application\\SampleTask.Application.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\AddRecaptchaToWorkVersion\\Work Version\\NadinSoftTask\\SampleTask.Application\\SampleTask.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -22,7 +22,12 @@
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
-    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\skiasharp\\2.88.6\\skiasharp.2.88.6.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.6\\skiasharp.nativeassets.macos.2.88.6.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.6\\skiasharp.nativeassets.win32.2.88.6.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.drawing.common\\8.0.0\\system.drawing.common.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

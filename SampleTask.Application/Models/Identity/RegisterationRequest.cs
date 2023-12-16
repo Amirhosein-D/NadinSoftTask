@@ -24,5 +24,8 @@ namespace SampleTask.Application.Models.Identity
         public string Password { get; set; }
         [Required]
         public string PhoneNumber { get; set; }
+        [Required]
+        public string CaptchaCode { get; set; }
+
     }
 }

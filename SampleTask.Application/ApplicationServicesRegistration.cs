@@ -1,5 +1,7 @@
 ﻿using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using SampleTask.Application.Contracts.Presistence;
+using SampleTask.Application.Tools.Captcha;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +17,12 @@ namespace SampleTask.Application
         {
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddMediatR(Assembly.GetExecutingAssembly());
+
+            services.AddScoped<ICaptchaTools, CaptchaTools>();
         }
+
+
+
+
     }
 }

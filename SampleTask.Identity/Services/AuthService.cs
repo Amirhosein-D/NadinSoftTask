@@ -12,6 +12,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using SampleTask.Domain;
+using Microsoft.AspNetCore.Http;
 
 namespace SampleTask.Identity.Services
 {
@@ -21,14 +22,17 @@ namespace SampleTask.Identity.Services
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly JwtSettings _jwtSettings;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly IHttpContextAccessor _contextAccessor;
 
         public AuthService(UserManager<ApplicationUser> userManager,
             IOptions<JwtSettings> jwtSettings,
-            SignInManager<ApplicationUser> signInManager)
+            SignInManager<ApplicationUser> signInManager,
+            IHttpContextAccessor contextAccessor)
         {
             _userManager = userManager;
             _jwtSettings = jwtSettings.Value;
             _signInManager = signInManager;
+            _contextAccessor = contextAccessor;
         }
 
         #region Register 
@@ -78,6 +82,17 @@ namespace SampleTask.Identity.Services
 
         public async Task<AuthResponse> Login(AuthRequest request)
         {
+            string savedCaptchaCodeSP = _contextAccessor.HttpContext.Session.GetString("CaptchaCodeSP");
+            string savedCaptchaCodeMP = _contextAccessor.HttpContext.Session.GetString("CaptchaCodeMP");
+
+
+            if (request.CaptchaCode != savedCaptchaCodeSP && request.CaptchaCode != savedCaptchaCodeMP)
+            {
+               
+                throw new Exception($"captcha code is not mach try eagen");
+                
+            }
+
             ApplicationUser user = await _userManager.FindByEmailAsync(request.Email);
             if (user == null)
             {

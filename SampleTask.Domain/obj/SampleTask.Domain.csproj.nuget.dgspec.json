@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\Work Version\\NadinSoftTask\\SampleTask.Domain\\SampleTask.Domain.csproj": {}
+    "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\AddRecaptchaToWorkVersion\\Work Version\\NadinSoftTask\\SampleTask.Domain\\SampleTask.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\Work Version\\NadinSoftTask\\SampleTask.Domain\\SampleTask.Domain.csproj": {
+    "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\AddRecaptchaToWorkVersion\\Work Version\\NadinSoftTask\\SampleTask.Domain\\SampleTask.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\Work Version\\NadinSoftTask\\SampleTask.Domain\\SampleTask.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\AddRecaptchaToWorkVersion\\Work Version\\NadinSoftTask\\SampleTask.Domain\\SampleTask.Domain.csproj",
         "projectName": "SampleTask.Domain",
-        "projectPath": "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\Work Version\\NadinSoftTask\\SampleTask.Domain\\SampleTask.Domain.csproj",
+        "projectPath": "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\AddRecaptchaToWorkVersion\\Work Version\\NadinSoftTask\\SampleTask.Domain\\SampleTask.Domain.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\Work Version\\NadinSoftTask\\SampleTask.Domain\\obj\\",
+        "outputPath": "C:\\Users\\LENOVO\\Desktop\\Task Project For Haire In Compony\\AddRecaptchaToWorkVersion\\Work Version\\NadinSoftTask\\SampleTask.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
